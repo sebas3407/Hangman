@@ -39,11 +39,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="S" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JlD-8s-cgO">
+                                <rect key="frame" x="139" y="464" width="97" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ea0-kK-raN">
+                                <rect key="frame" x="67" y="125" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="uI7-3V-E6w"/>
                     </view>
                     <connections>
+                        <outlet property="et_userLetter" destination="JlD-8s-cgO" id="hBN-WA-L1t"/>
+                        <outlet property="playerImage" destination="Ea0-kK-raN" id="za9-d6-Iu3"/>
                         <outlet property="tv_userWord" destination="MJN-ft-vtC" id="ays-bg-3kY"/>
                     </connections>
                 </viewController>

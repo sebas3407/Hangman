@@ -10,10 +10,10 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    /*
-     ImageView playerImage;
-     EditText et_userLetter
-     */
+    @IBOutlet weak var playerImage: UIImageView!
+    
+    @IBOutlet weak var et_userLetter: UITextField!
+    
     @IBOutlet weak var tv_userWord: UILabel!
     
     var userWord : String = ""
@@ -34,8 +34,7 @@ class GameViewController: UIViewController {
         for i in stride(from: 0, to: userWord.count, by: 1)
         {
             encriptedUserWord.append("_")
-            
-            //      tv_userWord.setText(tv_userWord.getText().toString() + encriptedUserWord[i] + " ")
+            tv_userWord.text = (tv_userWord.text)! + "\(encriptedUserWord[i])"
         }
     }
     
@@ -52,8 +51,9 @@ class GameViewController: UIViewController {
                 
                 for e in stride(from: 0, to: userWord.count, by: 1)
                 {
-                    //  tv_userWord.setText(tv_userWord.getText().toString() + encriptedUserWord[e] + " ")
+                    tv_userWord.text = (tv_userWord.text)! + "\(encriptedUserWord[e])"
                 }
+                
                 letterFound = true;
             }
         }
@@ -63,14 +63,14 @@ class GameViewController: UIViewController {
     
     func Play() {
         
-    //    userLetter = et_userLetter.getText().toString().toUpperCase();
+        userLetter = et_userLetter.text?.uppercased() ?? <#default value#>
     
         //evitamos que el usuario ponga espacios en blanco
         if(userLetter.isEmpty){
             return;
         }
     
-     //   et_userLetter.setText("");
+       et_userLetter.text = ""
     
         var letterfound : Bool
         letterfound = IsLetterFound(letter : userLetter[userLetter.startIndex])
@@ -116,7 +116,6 @@ class GameViewController: UIViewController {
     
     
             }
-        //cont++;
         }
         else{
     
