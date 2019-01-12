@@ -16,8 +16,9 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var tv_userWord: UILabel!
     
+    
     var userWord : String = ""
-    var userLetter : String = "" // --> la letra que introduce el usuario en cada turno
+    var userLetter : String = "" // --> the letter introduced by user on each turn 
     var cont:Int = 0
     
     var gameUserWord: [Character] = [Character]()
@@ -61,75 +62,80 @@ class GameViewController: UIViewController {
         return letterFound;
     }
     
-    func Play() {
+    @IBAction func Play(_ sender: Any) {
         
-        userLetter = et_userLetter.text?.uppercased() ?? <#default value#>
-    
-        //evitamos que el usuario ponga espacios en blanco
+      //  userLetter = et_userLetter.text?.uppercased() ?? <#default value#>
+        
+        //avoid whitespaces
         if(userLetter.isEmpty){
             return;
         }
-    
-       et_userLetter.text = ""
-    
+        
+        et_userLetter.text = ""
+        
         var letterfound : Bool
         letterfound = IsLetterFound(letter : userLetter[userLetter.startIndex])
-    
+        
         if (!letterfound) {
-    
+            
             if (cont == 0) {
-         //   imagen.setImageResource(R.drawable.dos);
-            cont = 1;
+                //   imagen.setImageResource(R.drawable.dos);
+                cont = 1;
             } else if (cont == 1) {
-      //      imagen.setImageResource(R.drawable.tres);
-            cont = 2;
+                //      imagen.setImageResource(R.drawable.tres);
+                cont = 2;
             } else if (cont == 2) {
-        //    imagen.setImageResource(R.drawable.cuatro);
-            cont = 3;
+                //    imagen.setImageResource(R.drawable.cuatro);
+                cont = 3;
             } else if (cont == 3) {
-         //   imagen.setImageResource(R.drawable.cinco);
-            cont = 4;
+                //   imagen.setImageResource(R.drawable.cinco);
+                cont = 4;
             } else if (cont == 4) {
-          //  imagen.setImageResource(R.drawable.seis);
-            cont = 5;
+                //  imagen.setImageResource(R.drawable.seis);
+                cont = 5;
             } else if (cont == 5) {
-         //   imagen.setImageResource(R.drawable.siete);
-            cont = 6;
+                //   imagen.setImageResource(R.drawable.siete);
+                cont = 6;
             } else if (cont == 6) {
-        //    imagen.setImageResource(R.drawable.ocho);
-            cont = 7;
+                //    imagen.setImageResource(R.drawable.ocho);
+                cont = 7;
             } else if (cont == 7) {
-          //  imagen.setImageResource(R.drawable.nueve);
-            cont = 8;
+                //  imagen.setImageResource(R.drawable.nueve);
+                cont = 8;
             } else if (cont == 8) {
-         //   imagen.setImageResource(R.drawable.diez);
-            cont = 9;
+                //   imagen.setImageResource(R.drawable.diez);
+                cont = 9;
             } else if (cont == 9) {
-         //   imagen.setImageResource(R.drawable.once);
-            cont = 10;
+                //   imagen.setImageResource(R.drawable.once);
+                cont = 10;
             } else {
-         //   imagen.setImageResource(R.drawable.doce);
-            cont = 0;
-    
-        //    Intent i = new Intent(game.this, gameOver.class);
-        //    startActivity(i);
-    
-    
+                //   imagen.setImageResource(R.drawable.doce);
+                cont = 0;
+                
+                //    Intent i = new Intent(game.this, gameOver.class);
+                //    startActivity(i);
+                
+                
             }
         }
         else{
-    
-    
-        //comprobamos si el usuario ha adivinado la palabra, usando la funcion replaceAll para quitar los espacios
-            /*
-        if(tv_userWord.getText().toString().replaceAll("\\s+","").equals(userWord))
-            {
-        
-                Intent myIntent = new Intent(game.this, win.class);
-                startActivity(myIntent);
+            /* Check if the user guess the word, to check this, we use the function
+             trimingCharacters to delete whitespaces */
+            
+            if (tv_userWord.text!.trimmingCharacters(in: .whitespacesAndNewlines).elementsEqual(userWord)){
+                
             }
-            */
+            
+            /*
+             if(tv_userWord.getText().toString().replaceAll("\\s+","").equals(userWord))
+             {
+             
+             Intent myIntent = new Intent(game.this, win.class);
+             startActivity(myIntent);
+             }
+             */
         }
+        
     }
 }
 
@@ -142,5 +148,3 @@ class GameViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-
