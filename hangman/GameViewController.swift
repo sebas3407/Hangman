@@ -16,18 +16,15 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var tv_userWord: UILabel!
     
-    
     var userWord : String = ""
     var userLetter : String = "" // --> the letter introduced by user on each turn 
-    var cont:Int = 0
+    var cont : Int = 0
     
     var gameUserWord: [Character] = [Character]()
     var encriptedUserWord: [Character] = [Character]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     func EncriptWord()
@@ -60,6 +57,13 @@ class GameViewController: UIViewController {
         }
         
         return letterFound;
+    }
+    
+    
+    @IBAction func setUserLetter(_ sender: Any) {
+
+        let btn : UIButton = sender as! UIButton
+        print(btn.accessibilityIdentifier!)
     }
     
     @IBAction func Play(_ sender: Any) {
@@ -114,8 +118,6 @@ class GameViewController: UIViewController {
                 
                 //    Intent i = new Intent(game.this, gameOver.class);
                 //    startActivity(i);
-                
-                
             }
         }
         else{
