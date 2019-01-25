@@ -63,17 +63,11 @@ class GameViewController: UIViewController {
     @IBAction func setUserLetter(_ sender: Any) {
 
         let btn : UIButton = sender as! UIButton
-        print(btn.accessibilityIdentifier!)
+        userLetter = (btn.accessibilityLabel!)
+        print(userLetter)
     }
     
     @IBAction func Play(_ sender: Any) {
-        
-      //  userLetter = et_userLetter.text?.uppercased() ?? <#default value#>
-        
-        //avoid whitespaces
-        if(userLetter.isEmpty){
-            return;
-        }
         
         et_userLetter.text = ""
         

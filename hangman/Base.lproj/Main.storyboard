@@ -49,37 +49,268 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="S" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JlD-8s-cgO">
-                                <rect key="frame" x="149" y="276" width="97" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ea0-kK-raN">
                                 <rect key="frame" x="66" y="58" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1z-tb-BBz" userLabel="prueba 1">
-                                <rect key="frame" x="76" y="354" width="45" height="38"/>
+                                <rect key="frame" x="58" y="379" width="45" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="aButton"/>
+                                <accessibility key="accessibilityConfiguration" label="A"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" backgroundImage="a.png"/>
                                 <connections>
-                                    <action selector="Play:" destination="3ad-8P-ayn" eventType="touchUpInside" id="aI5-zc-tao"/>
-                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="Z6h-zW-KBb"/>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="Q2o-lp-YN7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hys-MA-cGW" userLabel="btn b">
-                                <rect key="frame" x="123" y="354" width="45" height="38"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hys-MA-cGW" userLabel="btn b">
+                                <rect key="frame" x="112" y="379" width="45" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="bButton"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" backgroundImage="a.png"/>
                                 <connections>
-                                    <action selector="Play:" destination="3ad-8P-ayn" eventType="touchUpInside" id="MCz-fc-iFD"/>
-                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="sgz-Zq-RdA"/>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="8q3-nd-KKS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3f-hX-ZOo" userLabel="btn b">
+                                <rect key="frame" x="164" y="379" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="UdV-Nx-wkl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gv-pQ-M6C" userLabel="btn b">
+                                <rect key="frame" x="217" y="379" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="n5I-M2-Emu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6A8-d6-T4a" userLabel="btn b">
+                                <rect key="frame" x="270" y="379" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="QWM-16-b97"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heB-IX-k1Q" userLabel="prueba 1">
+                                <rect key="frame" x="58" y="425" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="A"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="YPO-z3-spW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WL-dP-ZYO" userLabel="btn b">
+                                <rect key="frame" x="111" y="425" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="XtI-45-yCs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1I-tl-L1P" userLabel="prueba 1">
+                                <rect key="frame" x="58" y="563" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="A"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="kpF-2S-hGB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k55-lK-cAT" userLabel="btn b">
+                                <rect key="frame" x="111" y="563" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="pda-5Q-RUO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="out-eo-YQd" userLabel="btn b">
+                                <rect key="frame" x="164" y="563" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="bqi-2B-sCq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEf-um-QCi" userLabel="btn b">
+                                <rect key="frame" x="165" y="609" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="u3H-qw-6rf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbG-ic-o24" userLabel="btn b">
+                                <rect key="frame" x="217" y="563" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="gFf-5D-L5W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANj-0M-ZUz" userLabel="btn b">
+                                <rect key="frame" x="270" y="563" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="BRt-tP-lNU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ex0-xw-GJf" userLabel="prueba 1">
+                                <rect key="frame" x="59" y="517" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="A"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="t48-qY-iBo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Nw-My-yh5" userLabel="btn b">
+                                <rect key="frame" x="112" y="517" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="Ivq-XB-MQI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrj-ob-BWd" userLabel="btn b">
+                                <rect key="frame" x="165" y="517" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="AnH-pj-DYd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzq-Q3-3hf" userLabel="btn b">
+                                <rect key="frame" x="218" y="517" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="ydl-RN-Q8F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLJ-SO-k8q" userLabel="btn b">
+                                <rect key="frame" x="271" y="517" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="G0l-fh-KRT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibb-FP-qSh" userLabel="btn b">
+                                <rect key="frame" x="164" y="425" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="zuV-O0-GsN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2a-cX-iVv" userLabel="btn b">
+                                <rect key="frame" x="217" y="425" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="XLd-7O-tbq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oik-AX-50t" userLabel="btn b">
+                                <rect key="frame" x="270" y="425" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="p5d-IF-esr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wap-7q-8gC" userLabel="prueba 1">
+                                <rect key="frame" x="59" y="471" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="A"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="80Z-RU-ACV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97a-HC-9eO" userLabel="btn b">
+                                <rect key="frame" x="112" y="471" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="ht0-QK-WkW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Eh-EF-l8M" userLabel="btn b">
+                                <rect key="frame" x="165" y="471" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="kKw-Of-DHe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72x-rh-ZPj" userLabel="btn b">
+                                <rect key="frame" x="218" y="471" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="q6x-Om-DOI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shf-hh-aOQ" userLabel="btn b">
+                                <rect key="frame" x="271" y="471" width="45" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="B"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" backgroundImage="a.png"/>
+                                <connections>
+                                    <action selector="setUserLetter:" destination="3ad-8P-ayn" eventType="touchUpInside" id="FJh-Bh-2pe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -87,8 +318,6 @@
                         <viewLayoutGuide key="safeArea" id="uI7-3V-E6w"/>
                     </view>
                     <connections>
-                        <outlet property="btn_a" destination="Y1z-tb-BBz" id="F8w-ft-0nt"/>
-                        <outlet property="et_userLetter" destination="JlD-8s-cgO" id="hBN-WA-L1t"/>
                         <outlet property="playerImage" destination="Ea0-kK-raN" id="za9-d6-Iu3"/>
                         <outlet property="tv_userWord" destination="MJN-ft-vtC" id="ays-bg-3kY"/>
                     </connections>
