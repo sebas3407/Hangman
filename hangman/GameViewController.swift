@@ -26,6 +26,10 @@ class GameViewController: UIViewController {
         EncriptWord()
     }
     
+    func getRandomWord(){
+        
+    }
+    
     func EncriptWord()
     {
         gameUserWord = Array(userWord)
@@ -106,10 +110,8 @@ class GameViewController: UIViewController {
                 cont = 10;
             } else {
                 playerImage.image = UIImage(named: "doce.jpg")
-                cont = 0;
                 //GAMEOVER
-                //    Intent i = new Intent(game.this, gameOver.class);
-                //    startActivity(i);
+                resetGame(status: 0)
             }
         }
         else{
@@ -118,11 +120,37 @@ class GameViewController: UIViewController {
             
             if (tv_userWord.text!.trimmingCharacters(in: .whitespacesAndNewlines).elementsEqual(userWord)){
                 //WIN THE GAME
-                
+                resetGame(status: 1)
             }
-            
+        }
+    }
+    
+    func resetGame(status : Int){
+        
+        tv_userWord.text = ""
+
+        playerImage.image = UIImage(named: "uno.jpg")
+        
+        var message : String = ""
+        
+        if(status == 0){
+            message = "Sorry, you don't guess the secret word, do you want to try again or quit the game?"
+        }
+        else{
+            message = "Congratulations, you are the winner, do you want to try again or quit the game?"
         }
         
+        let myalert = UIAlertController(title: "END GAME", message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        myalert.addAction(UIAlertAction(title: "Restart", style: .default) { (action:UIAlertAction!) in
+            self.getRandomWord()
+            self.EncriptWord()
+        })
+        myalert.addAction(UIAlertAction(title: "Quit the game", style: .cancel) { (action:UIAlertAction!) in
+            exit(0)
+        })
+        
+        self.present(myalert, animated: true)
     }
 }
 
