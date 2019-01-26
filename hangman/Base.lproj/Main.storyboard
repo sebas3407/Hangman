@@ -42,15 +42,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Secret word" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJN-ft-vtC">
-                                <rect key="frame" x="45" y="221" width="256" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ea0-kK-raN">
-                                <rect key="frame" x="66" y="58" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doce.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ea0-kK-raN">
+                                <rect key="frame" x="47" y="30" width="276" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tgz-pm-83c">
@@ -318,8 +311,15 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.1764705882352941" green="0.56862745100000001" blue="0.96862745100000003" alpha="0.205078125" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.1764705882352941" green="0.56862745100000001" blue="0.96862745100000003" alpha="0.34923480308219179" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJN-ft-vtC">
+                                <rect key="frame" x="59" y="237" width="256" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="uI7-3V-E6w"/>
@@ -354,6 +354,7 @@
         <image name="b.png" width="1200" height="1200"/>
         <image name="c.png" width="1200" height="1200"/>
         <image name="d.png" width="1200" height="1200"/>
+        <image name="doce.jpg" width="500" height="500"/>
         <image name="e.png" width="1200" height="1200"/>
         <image name="f.png" width="1200" height="1200"/>
         <image name="g.png" width="1200" height="1200"/>

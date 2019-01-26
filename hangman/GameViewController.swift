@@ -12,11 +12,9 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var playerImage: UIImageView!
     
-    @IBOutlet weak var et_userLetter: UITextField!
-    
     @IBOutlet weak var tv_userWord: UILabel!
     
-    var userWord : String = ""
+    var userWord : String = "SES"
     var userLetter : String = "" // --> the letter introduced by user on each turn 
     var cont : Int = 0
     
@@ -25,13 +23,15 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        EncriptWord()
     }
     
     func EncriptWord()
     {
+        gameUserWord = Array(userWord)
         for i in stride(from: 0, to: userWord.count, by: 1)
         {
-            encriptedUserWord.append("_")
+            encriptedUserWord.append("*")
             tv_userWord.text = (tv_userWord.text)! + "\(encriptedUserWord[i])"
         }
     }
@@ -64,12 +64,10 @@ class GameViewController: UIViewController {
 
         let btn : UIButton = sender as! UIButton
         userLetter = (btn.accessibilityLabel!)
-        print(userLetter)
+        Play()
     }
     
-    @IBAction func Play(_ sender: Any) {
-        
-        et_userLetter.text = ""
+    func Play() {
         
         var letterfound : Bool
         letterfound = IsLetterFound(letter : userLetter[userLetter.startIndex])
@@ -109,7 +107,7 @@ class GameViewController: UIViewController {
             } else {
                 //   imagen.setImageResource(R.drawable.doce);
                 cont = 0;
-                
+                //GAMEOVER
                 //    Intent i = new Intent(game.this, gameOver.class);
                 //    startActivity(i);
             }
@@ -119,17 +117,10 @@ class GameViewController: UIViewController {
              trimingCharacters to delete whitespaces */
             
             if (tv_userWord.text!.trimmingCharacters(in: .whitespacesAndNewlines).elementsEqual(userWord)){
+                //WIN THE GAME
                 
             }
             
-            /*
-             if(tv_userWord.getText().toString().replaceAll("\\s+","").equals(userWord))
-             {
-             
-             Intent myIntent = new Intent(game.this, win.class);
-             startActivity(myIntent);
-             }
-             */
         }
         
     }
