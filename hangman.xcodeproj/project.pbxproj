@@ -40,6 +40,17 @@
 		AA47361B21FBCB46004EFD14 /* c.png in Resources */ = {isa = PBXBuildFile; fileRef = AA47360121FBCB46004EFD14 /* c.png */; };
 		AA47361D21FBCE24004EFD14 /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = AA47361C21FBCE24004EFD14 /* a.png */; };
 		AA4842B221FCCB11005CAC96 /* doce.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842B121FCCB11005CAC96 /* doce.jpg */; };
+		AA4842B421FCDFE0005CAC96 /* siete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842B321FCDFE0005CAC96 /* siete.jpg */; };
+		AA4842BF21FCE046005CAC96 /* cinco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842B521FCE046005CAC96 /* cinco.jpg */; };
+		AA4842C021FCE046005CAC96 /* cuatro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842B621FCE046005CAC96 /* cuatro.jpg */; };
+		AA4842C121FCE046005CAC96 /* ocho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842B721FCE046005CAC96 /* ocho.jpg */; };
+		AA4842C221FCE046005CAC96 /* tres.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842B821FCE046005CAC96 /* tres.jpg */; };
+		AA4842C321FCE046005CAC96 /* uno.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842B921FCE046005CAC96 /* uno.jpg */; };
+		AA4842C421FCE046005CAC96 /* seis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842BA21FCE046005CAC96 /* seis.jpg */; };
+		AA4842C521FCE046005CAC96 /* diez.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842BB21FCE046005CAC96 /* diez.jpg */; };
+		AA4842C621FCE046005CAC96 /* nueve.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842BC21FCE046005CAC96 /* nueve.jpg */; };
+		AA4842C721FCE046005CAC96 /* once.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842BD21FCE046005CAC96 /* once.jpg */; };
+		AA4842C821FCE046005CAC96 /* dos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842BE21FCE046005CAC96 /* dos.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +89,17 @@
 		AA47360121FBCB46004EFD14 /* c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c.png; sourceTree = "<group>"; };
 		AA47361C21FBCE24004EFD14 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
 		AA4842B121FCCB11005CAC96 /* doce.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doce.jpg; sourceTree = "<group>"; };
+		AA4842B321FCDFE0005CAC96 /* siete.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = siete.jpg; sourceTree = "<group>"; };
+		AA4842B521FCE046005CAC96 /* cinco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cinco.jpg; sourceTree = "<group>"; };
+		AA4842B621FCE046005CAC96 /* cuatro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cuatro.jpg; sourceTree = "<group>"; };
+		AA4842B721FCE046005CAC96 /* ocho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ocho.jpg; sourceTree = "<group>"; };
+		AA4842B821FCE046005CAC96 /* tres.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tres.jpg; sourceTree = "<group>"; };
+		AA4842B921FCE046005CAC96 /* uno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uno.jpg; sourceTree = "<group>"; };
+		AA4842BA21FCE046005CAC96 /* seis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seis.jpg; sourceTree = "<group>"; };
+		AA4842BB21FCE046005CAC96 /* diez.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = diez.jpg; sourceTree = "<group>"; };
+		AA4842BC21FCE046005CAC96 /* nueve.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nueve.jpg; sourceTree = "<group>"; };
+		AA4842BD21FCE046005CAC96 /* once.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = once.jpg; sourceTree = "<group>"; };
+		AA4842BE21FCE046005CAC96 /* dos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dos.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +160,16 @@
 				AA47360121FBCB46004EFD14 /* c.png */,
 				AA4735EE21FBCB45004EFD14 /* d.png */,
 				AA4735FE21FBCB46004EFD14 /* e.png */,
+				AA4842B521FCE046005CAC96 /* cinco.jpg */,
+				AA4842B621FCE046005CAC96 /* cuatro.jpg */,
+				AA4842BB21FCE046005CAC96 /* diez.jpg */,
+				AA4842BE21FCE046005CAC96 /* dos.jpg */,
+				AA4842BC21FCE046005CAC96 /* nueve.jpg */,
+				AA4842B721FCE046005CAC96 /* ocho.jpg */,
+				AA4842BD21FCE046005CAC96 /* once.jpg */,
+				AA4842BA21FCE046005CAC96 /* seis.jpg */,
+				AA4842B821FCE046005CAC96 /* tres.jpg */,
+				AA4842B921FCE046005CAC96 /* uno.jpg */,
 				AA4735F221FBCB45004EFD14 /* f.png */,
 				AA4735FC21FBCB46004EFD14 /* g.png */,
 				AA4735F721FBCB45004EFD14 /* h.png */,
@@ -146,6 +178,7 @@
 				AA4735EA21FBCB44004EFD14 /* k.png */,
 				AA4735F121FBCB45004EFD14 /* l.png */,
 				AA4842B121FCCB11005CAC96 /* doce.jpg */,
+				AA4842B321FCDFE0005CAC96 /* siete.jpg */,
 				AA4735F021FBCB45004EFD14 /* m.png */,
 				AA4735F521FBCB45004EFD14 /* n.png */,
 				AA4735EC21FBCB44004EFD14 /* o.png */,
@@ -223,14 +256,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA47360821FBCB46004EFD14 /* d.png in Resources */,
+				AA4842C021FCE046005CAC96 /* cuatro.jpg in Resources */,
+				AA4842C121FCE046005CAC96 /* ocho.jpg in Resources */,
+				AA4842C421FCE046005CAC96 /* seis.jpg in Resources */,
 				AA47360221FBCB46004EFD14 /* t.png in Resources */,
 				AA47360521FBCB46004EFD14 /* q.png in Resources */,
 				AA47360C21FBCB46004EFD14 /* f.png in Resources */,
+				AA4842C521FCE046005CAC96 /* diez.jpg in Resources */,
+				AA4842BF21FCE046005CAC96 /* cinco.jpg in Resources */,
 				AA47361121FBCB46004EFD14 /* h.png in Resources */,
 				AA1934BF21E7E4B9008A149F /* LaunchScreen.storyboard in Resources */,
 				AA47360A21FBCB46004EFD14 /* m.png in Resources */,
 				AA47361A21FBCB46004EFD14 /* s.png in Resources */,
 				AA47360F21FBCB46004EFD14 /* n.png in Resources */,
+				AA4842C321FCE046005CAC96 /* uno.jpg in Resources */,
 				AA47361B21FBCB46004EFD14 /* c.png in Resources */,
 				AA47360E21FBCB46004EFD14 /* z.png in Resources */,
 				AA47361021FBCB46004EFD14 /* j.png in Resources */,
@@ -243,13 +282,18 @@
 				AA47361921FBCB46004EFD14 /* x.png in Resources */,
 				AA47361421FBCB46004EFD14 /* r.png in Resources */,
 				AA47361D21FBCE24004EFD14 /* a.png in Resources */,
+				AA4842B421FCDFE0005CAC96 /* siete.jpg in Resources */,
 				AA47360B21FBCB46004EFD14 /* l.png in Resources */,
 				AA1934BC21E7E4B9008A149F /* Assets.xcassets in Resources */,
 				AA47361721FBCB46004EFD14 /* b.png in Resources */,
 				AA47360421FBCB46004EFD14 /* k.png in Resources */,
 				AA47360721FBCB46004EFD14 /* p.png in Resources */,
 				AA47361521FBCB46004EFD14 /* u.png in Resources */,
+				AA4842C221FCE046005CAC96 /* tres.jpg in Resources */,
 				AA47361821FBCB46004EFD14 /* e.png in Resources */,
+				AA4842C721FCE046005CAC96 /* once.jpg in Resources */,
+				AA4842C621FCE046005CAC96 /* nueve.jpg in Resources */,
+				AA4842C821FCE046005CAC96 /* dos.jpg in Resources */,
 				AA1934BA21E7E4B6008A149F /* Main.storyboard in Resources */,
 				AA47360D21FBCB46004EFD14 /* w.png in Resources */,
 			);

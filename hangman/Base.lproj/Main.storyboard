@@ -42,7 +42,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doce.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ea0-kK-raN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uno.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ea0-kK-raN">
                                 <rect key="frame" x="47" y="30" width="276" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -354,7 +354,6 @@
         <image name="b.png" width="1200" height="1200"/>
         <image name="c.png" width="1200" height="1200"/>
         <image name="d.png" width="1200" height="1200"/>
-        <image name="doce.jpg" width="500" height="500"/>
         <image name="e.png" width="1200" height="1200"/>
         <image name="f.png" width="1200" height="1200"/>
         <image name="g.png" width="1200" height="1200"/>
@@ -372,6 +371,7 @@
         <image name="s.png" width="1200" height="1200"/>
         <image name="t.png" width="1200" height="1200"/>
         <image name="u.png" width="1200" height="1200"/>
+        <image name="uno.jpg" width="500" height="500"/>
         <image name="v.png" width="1200" height="1200"/>
         <image name="w.png" width="1200" height="1200"/>
         <image name="x.png" width="1200" height="1200"/>

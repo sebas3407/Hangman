@@ -75,37 +75,37 @@ class GameViewController: UIViewController {
         if (!letterfound) {
             
             if (cont == 0) {
-                //   imagen.setImageResource(R.drawable.dos);
+                playerImage.image = UIImage(named: "dos.jpg")
                 cont = 1;
             } else if (cont == 1) {
-                //      imagen.setImageResource(R.drawable.tres);
+                playerImage.image = UIImage(named: "tres.jpg")
                 cont = 2;
             } else if (cont == 2) {
-                //    imagen.setImageResource(R.drawable.cuatro);
+                playerImage.image = UIImage(named: "cuatro.jpg")
                 cont = 3;
             } else if (cont == 3) {
-                //   imagen.setImageResource(R.drawable.cinco);
+                playerImage.image = UIImage(named: "cinco.jpg")
                 cont = 4;
             } else if (cont == 4) {
-                //  imagen.setImageResource(R.drawable.seis);
+                playerImage.image = UIImage(named: "seis.jpg")
                 cont = 5;
             } else if (cont == 5) {
-                //   imagen.setImageResource(R.drawable.siete);
+                playerImage.image = UIImage(named: "siete.jpg")
                 cont = 6;
             } else if (cont == 6) {
-                //    imagen.setImageResource(R.drawable.ocho);
+                playerImage.image = UIImage(named: "ocho.jpg")
                 cont = 7;
             } else if (cont == 7) {
-                //  imagen.setImageResource(R.drawable.nueve);
+                playerImage.image = UIImage(named: "nueve.jpg")
                 cont = 8;
             } else if (cont == 8) {
-                //   imagen.setImageResource(R.drawable.diez);
+                playerImage.image = UIImage(named: "diez.jpg")
                 cont = 9;
             } else if (cont == 9) {
-                //   imagen.setImageResource(R.drawable.once);
+                playerImage.image = UIImage(named: "once.jpg")
                 cont = 10;
             } else {
-                //   imagen.setImageResource(R.drawable.doce);
+                playerImage.image = UIImage(named: "doce.jpg")
                 cont = 0;
                 //GAMEOVER
                 //    Intent i = new Intent(game.this, gameOver.class);
