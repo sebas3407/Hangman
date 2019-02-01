@@ -32,6 +32,7 @@ class GameViewController: UIViewController {
     
     func EncriptWord()
     {
+        encriptedUserWord = [Character]()
         gameUserWord = Array(userWord)
         for i in stride(from: 0, to: userWord.count, by: 1)
         {
@@ -68,6 +69,7 @@ class GameViewController: UIViewController {
 
         let btn : UIButton = sender as! UIButton
         userLetter = (btn.accessibilityLabel!)
+        btn.isEnabled = false
         Play()
     }
     
@@ -127,8 +129,8 @@ class GameViewController: UIViewController {
     
     func resetGame(status : Int){
         
+        cont = 0
         tv_userWord.text = ""
-
         playerImage.image = UIImage(named: "uno.jpg")
         
         var message : String = ""
@@ -151,6 +153,11 @@ class GameViewController: UIViewController {
         })
         
         self.present(myalert, animated: true)
+        for tagvalue in 1...26
+        {
+            let btnTemp = self.view.viewWithTag(tagvalue) as! UIButton
+            btnTemp.isEnabled = true
+        }
     }
 }
 
