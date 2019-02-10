@@ -26,7 +26,6 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getRandomWord()
-        EncriptWord()
     }
     
     func getRandomWord(){
@@ -43,26 +42,22 @@ class GameViewController: UIViewController {
             guard let dataFromUrl = data else { return }
             do {
                 
-                guard let word = try? JSONDecoder().decode(RandomWord.self, from: dataFromUrl) else{
-
-                    print("Error: Couldn't decode data into Blog")
+                guard let randomWorld = try? JSONDecoder().decode(RandomWord.self, from: dataFromUrl)  else{
+                    print("Error: Couldn't decode data")
                     return
-
                 }
                 
-                print("1 \(word)")
+                self.userWord = randomWorld.word.uppercased()
 
                 DispatchQueue.main.async {
-                    
-                    print("2 \(word)")
+                    self.EncriptWord()
                 }
-                
             } catch let jsonError {
                 print(jsonError)
             }
             
             }.resume()
-        //End implementing URLSession
+        
     }
     
     func EncriptWord()
@@ -70,13 +65,9 @@ class GameViewController: UIViewController {
         encriptedUserWord = [Character]()
         gameUserWord = Array(userWord)
         
-        for i in 0...userWord.count {
+        for i in 0..<userWord.count {
             encriptedUserWord.append("*")
             tv_userWord.text = (tv_userWord.text)! + "\(encriptedUserWord[i])"
-        }
-        for i in stride(from: 0, to: userWord.count, by: 1)
-        {
-            
         }
     }
     
@@ -101,8 +92,7 @@ class GameViewController: UIViewController {
         
         return letterFound;
     }
-    
-    
+
     @IBAction func setUserLetter(_ sender: Any) {
 
         let btn : UIButton = sender as! UIButton
