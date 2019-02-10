@@ -14,30 +14,69 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var tv_userWord: UILabel!
     
-    var userWord : String = "SES"
+    var userWord : String = " "
     var userLetter : String = "" // --> the letter introduced by user on each turn 
     var cont : Int = 0
+    
+    let apiKey = "49d4b069434f6fde9a71a02f4c607138f418f82f792e55264"
     
     var gameUserWord: [Character] = [Character]()
     var encriptedUserWord: [Character] = [Character]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getRandomWord()
         EncriptWord()
     }
     
     func getRandomWord(){
         
+        //Implementing URLSession
+        let urlString = "http://api.wordnik.com/v4/words.json/randomWord?api_key=49d4b069434f6fde9a71a02f4c607138f418f82f792e55264"
+        guard let url = URL(string: urlString) else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+            
+            guard let dataFromUrl = data else { return }
+            do {
+                
+                guard let word = try? JSONDecoder().decode(RandomWord.self, from: dataFromUrl) else{
+
+                    print("Error: Couldn't decode data into Blog")
+                    return
+
+                }
+                
+                print("1 \(word)")
+
+                DispatchQueue.main.async {
+                    
+                    print("2 \(word)")
+                }
+                
+            } catch let jsonError {
+                print(jsonError)
+            }
+            
+            }.resume()
+        //End implementing URLSession
     }
     
     func EncriptWord()
     {
         encriptedUserWord = [Character]()
         gameUserWord = Array(userWord)
-        for i in stride(from: 0, to: userWord.count, by: 1)
-        {
+        
+        for i in 0...userWord.count {
             encriptedUserWord.append("*")
             tv_userWord.text = (tv_userWord.text)! + "\(encriptedUserWord[i])"
+        }
+        for i in stride(from: 0, to: userWord.count, by: 1)
+        {
+            
         }
     }
     
@@ -45,15 +84,14 @@ class GameViewController: UIViewController {
         
         var letterFound : Bool = false
         
-        for i in stride(from: 0, to: userWord.count, by: 1)
-        {
+        for i in 0..<userWord.count {
+
             if (gameUserWord[i] == letter) {
                 
                 tv_userWord.text = ""
                 encriptedUserWord[i] = letter
                 
-                for e in stride(from: 0, to: userWord.count, by: 1)
-                {
+                for e in 0..<userWord.count{
                     tv_userWord.text = (tv_userWord.text)! + "\(encriptedUserWord[e])"
                 }
                 

@@ -51,6 +51,7 @@
 		AA4842C621FCE046005CAC96 /* nueve.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842BC21FCE046005CAC96 /* nueve.jpg */; };
 		AA4842C721FCE046005CAC96 /* once.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842BD21FCE046005CAC96 /* once.jpg */; };
 		AA4842C821FCE046005CAC96 /* dos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA4842BE21FCE046005CAC96 /* dos.jpg */; };
+		AAE25A0E220612FC0091F9FB /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE25A0D220612FC0091F9FB /* Word.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		AA4842BC21FCE046005CAC96 /* nueve.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nueve.jpg; sourceTree = "<group>"; };
 		AA4842BD21FCE046005CAC96 /* once.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = once.jpg; sourceTree = "<group>"; };
 		AA4842BE21FCE046005CAC96 /* dos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dos.jpg; sourceTree = "<group>"; };
+		AAE25A0D220612FC0091F9FB /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		AA4735E621FBADCD004EFD14 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AAE25A0D220612FC0091F9FB /* Word.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA1934B721E7E4B6008A149F /* ViewController.swift in Sources */,
+				AAE25A0E220612FC0091F9FB /* Word.swift in Sources */,
 				AA1934C721E7E502008A149F /* GameViewController.swift in Sources */,
 				AA1934B521E7E4B6008A149F /* AppDelegate.swift in Sources */,
 			);
