@@ -25,11 +25,12 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tv_userWord.text = ""
         getRandomWord()
     }
     
     func getRandomWord(){
-        
+
         //Implementing URLSession
         let urlString = "http://api.wordnik.com/v4/words.json/randomWord?api_key=49d4b069434f6fde9a71a02f4c607138f418f82f792e55264"
         guard let url = URL(string: urlString) else { return }
@@ -48,6 +49,7 @@ class GameViewController: UIViewController {
                 }
                 
                 self.userWord = randomWorld.word.uppercased()
+                print("La palabra es \(randomWorld.word)")
 
                 DispatchQueue.main.async {
                     self.EncriptWord()
@@ -97,54 +99,31 @@ class GameViewController: UIViewController {
 
         let btn : UIButton = sender as! UIButton
         userLetter = (btn.accessibilityLabel!)
-        btn.isEnabled = false
-        Play()
+        Play(btn)
     }
     
-    func Play() {
+    func Play(_ sender : Any) {
+        
+        let btn : UIButton = sender as! UIButton
         
         var letterfound : Bool
         letterfound = IsLetterFound(letter : userLetter[userLetter.startIndex])
         
         if (!letterfound) {
-            
-            if (cont == 0) {
-                playerImage.image = UIImage(named: "dos.jpg")
-                cont = 1;
-            } else if (cont == 1) {
-                playerImage.image = UIImage(named: "tres.jpg")
-                cont = 2;
-            } else if (cont == 2) {
-                playerImage.image = UIImage(named: "cuatro.jpg")
-                cont = 3;
-            } else if (cont == 3) {
-                playerImage.image = UIImage(named: "cinco.jpg")
-                cont = 4;
-            } else if (cont == 4) {
-                playerImage.image = UIImage(named: "seis.jpg")
-                cont = 5;
-            } else if (cont == 5) {
-                playerImage.image = UIImage(named: "siete.jpg")
-                cont = 6;
-            } else if (cont == 6) {
-                playerImage.image = UIImage(named: "ocho.jpg")
-                cont = 7;
-            } else if (cont == 7) {
-                playerImage.image = UIImage(named: "nueve.jpg")
-                cont = 8;
-            } else if (cont == 8) {
-                playerImage.image = UIImage(named: "diez.jpg")
-                cont = 9;
-            } else if (cont == 9) {
-                playerImage.image = UIImage(named: "once.jpg")
-                cont = 10;
-            } else {
+            btn.backgroundColor = UIColor.red
+
+            cont = cont + 1
+
+            /*
                 playerImage.image = UIImage(named: "doce.jpg")
                 //GAMEOVER
                 resetGame(status: 0)
-            }
+            */
         }
         else{
+            
+            btn.backgroundColor = UIColor.green
+
             /* Check if the user guess the word, to check this, we use the function
              trimingCharacters to delete whitespaces */
             
@@ -156,11 +135,10 @@ class GameViewController: UIViewController {
     }
     
     func resetGame(status : Int){
-        
+        self.tv_userWord.text = ""
         cont = 0
-        tv_userWord.text = ""
-        playerImage.image = UIImage(named: "uno.jpg")
-        
+//        playerImage.image = UIImage(named: "uno.jpg")
+        /*
         var message : String = ""
         
         if(status == 0){
@@ -179,22 +157,12 @@ class GameViewController: UIViewController {
         myalert.addAction(UIAlertAction(title: "Quit the game", style: .cancel) { (action:UIAlertAction!) in
             exit(0)
         })
-        
+ 
         self.present(myalert, animated: true)
-        for tagvalue in 1...26
-        {
+ */
+        for tagvalue in 1...26 {
             let btnTemp = self.view.viewWithTag(tagvalue) as! UIButton
-            btnTemp.isEnabled = true
+            btnTemp.backgroundColor = UIColor.clear
         }
     }
 }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
