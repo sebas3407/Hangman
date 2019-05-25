@@ -10,9 +10,16 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    @IBOutlet weak var playerImage: UIImageView!
+    @IBOutlet weak var manImage: UIImageView!
+    
+    @IBOutlet weak var girlImage: UIImageView!
+    
+    @IBOutlet weak var result_image: UIImageView!
+    
     
     @IBOutlet weak var tv_userWord: UILabel!
+    
+    @IBOutlet weak var btn_reset: UIButton!
     
     var userWord : String = " "
     var userLetter : String = "" // --> the letter introduced by user on each turn 
@@ -25,7 +32,15 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        startRound()
+    }
+    
+    func startRound() {
+        girlImage.image = UIImage(named: "smile.png")
+        manImage.image = UIImage(named: "think.png")
         tv_userWord.text = ""
+        btn_reset.isHidden = true
+        result_image.isHidden = true
         getRandomWord()
     }
     
@@ -114,11 +129,13 @@ class GameViewController: UIViewController {
 
             cont = cont + 1
 
-            /*
-                playerImage.image = UIImage(named: "doce.jpg")
-                //GAMEOVER
-                resetGame(status: 0)
-            */
+            if (cont == 12){
+                girlImage.image = UIImage(named: "dead_girl.png")
+                manImage.image = UIImage(named: "dead.png")
+                result_image.image = UIImage(named: "failure.png")
+                result_image.isHidden = false
+                btn_reset.isHidden = false
+            }
         }
         else{
             
@@ -129,40 +146,24 @@ class GameViewController: UIViewController {
             
             if (tv_userWord.text!.trimmingCharacters(in: .whitespacesAndNewlines).elementsEqual(userWord)){
                 //WIN THE GAME
-                resetGame(status: 1)
+                btn_reset.isHidden = false
+                girlImage.image = UIImage(named: "happy.png")
+                manImage.image = UIImage(named: "glasses.png")
+                result_image.isHidden = false
+                result_image.image = UIImage(named: "tick.png")
             }
         }
     }
     
-    func resetGame(status : Int){
+    @IBAction func resetGame(_ sender: Any) {
+        self.btn_reset.isHidden = true
         self.tv_userWord.text = ""
         cont = 0
-//        playerImage.image = UIImage(named: "uno.jpg")
-        /*
-        var message : String = ""
         
-        if(status == 0){
-            message = "Sorry, you don't guess the secret word, do you want to try again or quit the game?"
-        }
-        else{
-            message = "Congratulations, you are the winner, do you want to try again or quit the game?"
-        }
-        
-        let myalert = UIAlertController(title: "END GAME", message: message, preferredStyle: UIAlertController.Style.alert)
-        
-        myalert.addAction(UIAlertAction(title: "Restart", style: .default) { (action:UIAlertAction!) in
-            self.getRandomWord()
-            self.EncriptWord()
-        })
-        myalert.addAction(UIAlertAction(title: "Quit the game", style: .cancel) { (action:UIAlertAction!) in
-            exit(0)
-        })
- 
-        self.present(myalert, animated: true)
- */
         for tagvalue in 1...26 {
             let btnTemp = self.view.viewWithTag(tagvalue) as! UIButton
             btnTemp.backgroundColor = UIColor.clear
         }
+        startRound()
     }
 }
