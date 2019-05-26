@@ -16,5 +16,5 @@ Hangman is an iOS version of the entertaining game: "Hangman". The application w
   
   #### Credits
   
-  - **Developer:** Sebastian Ortiz Velez
+  - **Developer:** Sebastian Ortiz Velez http://sebastianortiz.tk
   - **Designer:** Aitor Catena Montull
