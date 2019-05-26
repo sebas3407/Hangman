@@ -1,6 +1,6 @@
 # Hangman
 
-Hangman is an iOS version of the entertaining game: "Hangman". The application uses an external API to get a new word in each game.
+Hangman is an iOS version of the entertaining game: "Hangman". The application was developed using **Swift4** and uses an external API to get a new word in each game.
 
 #### Game instructions
 
