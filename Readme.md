@@ -1,6 +1,6 @@
 # Hangman
 
-**Develope with Swift 4**
+**Developed with Swift 4**
 
 Hangman is an iOS version of the entertaining game: "Hangman". The application was developed using **Swift4** and uses an external API to get a new word in each game.
 
